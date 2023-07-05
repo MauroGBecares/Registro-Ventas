@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D5B983C0-55D2-4302-921A-3E4816F0B5FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Interfaz</RootNamespace>
+    <AssemblyName>Interfaz</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AltaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaCliente.Designer.cs">
+      <DependentUpon>AltaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaProducto.Designer.cs">
+      <DependentUpon>AltaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaVentasItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaVentasItems.Designer.cs">
+      <DependentUpon>AltaVentasItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaProductos.Designer.cs">
+      <DependentUpon>ListaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaClientes.Designer.cs">
+      <DependentUpon>ListaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroVentas.Designer.cs">
+      <DependentUpon>RegistroVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaPrincipal.Designer.cs">
+      <DependentUpon>VentanaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VizualizacionVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VizualizacionVenta.Designer.cs">
+      <DependentUpon>VizualizacionVenta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AltaCliente.resx">
+      <DependentUpon>AltaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaProducto.resx">
+      <DependentUpon>AltaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaVentasItems.resx">
+      <DependentUpon>AltaVentasItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaClientes.resx">
+      <DependentUpon>ListaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaProductos.resx">
+      <DependentUpon>ListaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroVentas.resx">
+      <DependentUpon>RegistroVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaPrincipal.resx">
+      <DependentUpon>VentanaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VizualizacionVenta.resx">
+      <DependentUpon>VizualizacionVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseDatos\BaseDatos.csproj">
+      <Project>{07c0866f-c74f-4ac4-894f-468ccadcf9c0}</Project>
+      <Name>BaseDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{5cfa3973-f2b1-4f0f-8f7e-e2f311665927}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
